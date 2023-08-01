@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hnGvhgslqYLqIm1kN6JaYohHzss/PnEn9fzoHRb4JIW4prpO5jyr49+njgjM5H6pimDGw8Qi2gAgEFmZkqcH+Q==",
+  "dgSpecHash": "vRwnca8IZdlaX7KCyNsyux2W0Zw7SR6veBNcAzeR7kW6+YRFkNFLYD0qRAIn/pK4X2Ue1kQ4l3/q0fcXX+GDQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\finalProject\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mhtal\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.9\\microsoft.aspnetcore.cryptography.internal.7.0.9.nupkg.sha512",
     "C:\\Users\\mhtal\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.9\\microsoft.aspnetcore.cryptography.keyderivation.7.0.9.nupkg.sha512",

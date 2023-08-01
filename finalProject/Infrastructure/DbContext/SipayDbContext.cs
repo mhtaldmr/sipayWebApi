@@ -10,6 +10,10 @@ public class SipayDbContext : IdentityDbContext<User>
     {
     }
 
+    public DbSet<Apartment> Apartments { get; set; }
+    public DbSet<Message> Messages { get; set; }
+    public DbSet<Invoice> Invoices { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

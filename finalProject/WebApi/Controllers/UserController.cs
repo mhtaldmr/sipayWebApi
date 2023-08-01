@@ -1,4 +1,4 @@
-using Application.Dtos;
+using Application.Dtos.Request.Users;
 using Domain.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +18,7 @@ public class UserController : ControllerBase
     [HttpPost("signUp")]
     public async Task<IActionResult> SignUp(UserSignUpDto signUpDto)
     {
-        var user = await _userManager.FindByEmailAsync(signUpDto.UserName);
+        var user = await _userManager.FindByEmailAsync(signUpDto.Email);
         if (user is not null)
         {
             throw new ApplicationException($"Unable to find user with email");
@@ -26,7 +26,7 @@ public class UserController : ControllerBase
 
         var newUser = new User()
         {
-            UserName = signUpDto.UserName,
+            UserName = signUpDto.Email,
             PasswordHash = signUpDto.Password
         };
 

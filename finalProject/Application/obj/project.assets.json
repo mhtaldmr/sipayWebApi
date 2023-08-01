@@ -791,11 +791,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\finalProject\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\finalProject\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\mhtal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\finalProject\\Application\\obj\\",
+      "outputPath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mhtal\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -810,8 +810,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\finalProject\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\finalProject\\Domain\\Domain.csproj"
+            "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Domain\\Domain.csproj"
             }
           }
         }

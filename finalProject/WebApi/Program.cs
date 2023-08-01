@@ -1,17 +1,12 @@
-using Domain.Entity;
-using Infrastructure.DbContext;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using Application;
+using Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
-//DbContext
-var connectionString = builder.Configuration.GetConnectionString("Mssql");
-builder.Services.AddDbContext<SipayDbContext>(opt => opt.UseSqlServer(connectionString));
-
-builder.Services.AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<SipayDbContext>();
+//Add Dependencies
+builder.Services.InfrastructureDependencies(builder.Configuration);
+builder.Services.ApplicationDependencies();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

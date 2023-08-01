@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Mh8nR9gcnNTy8oDyNQJxI/zsbLmqdZtmX9lNv1KF2mFExGvsdCF+9gn+B3NjrWNLWN7DzwgVuQxHMQd9IyXbYw==",
+  "dgSpecHash": "PTTGGQmw8w56/JfDd05pEK8jYu+4NQM4PW7ojk3trjD0JvXUCktoKM4B3MY4scfDr/+iSTJ3CgQhLFfxS9vTyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\finalProject\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mhtal\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mhtal\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
