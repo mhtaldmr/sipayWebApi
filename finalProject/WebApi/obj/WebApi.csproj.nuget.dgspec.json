@@ -41,6 +41,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -120,14 +130,14 @@
         }
       }
     },
-    "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj": {
+    "c:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "c:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\mhtal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mhtal\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -158,6 +168,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.9, )"
@@ -175,6 +193,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.9, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -223,8 +245,8 @@
               "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Application\\Application.csproj": {
                 "projectPath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Application\\Application.csproj"
               },
-              "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj"
+              "c:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\mhtal\\OneDrive\\Masaüstü\\sipayWebApi\\finalProject\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -258,6 +280,10 @@
               "version": "[7.0.9, )"
             },
             "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
               "version": "[6.5.0, )"
             }

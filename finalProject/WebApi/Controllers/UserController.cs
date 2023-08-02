@@ -1,51 +1,32 @@
 using Application.Dtos.Request.Users;
-using Domain.Entity;
-using Microsoft.AspNetCore.Identity;
+using Application.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers;
 
 public class UserController : ControllerBase
  {
-    private readonly UserManager<User> _userManager;
+    private readonly IUserSignUpService _signUpService;
+    private readonly IUserLogInService _logInService;
 
-    public UserController(UserManager<User> userManager)
+
+    public UserController(IUserSignUpService signUpService, IUserLogInService logInService)
     {
-        _userManager = userManager;
+        _signUpService = signUpService;
+        _logInService = logInService;
     }
 
 
-    [HttpPost("signUp")]
-    public async Task<IActionResult> SignUp(UserSignUpDto signUpDto)
+    [HttpPost("signup")]
+    public async Task<IActionResult> SignUp([FromBody]UserSignUpDto signup)
     {
-        var user = await _userManager.FindByEmailAsync(signUpDto.Email);
-        if (user is not null)
-        {
-            throw new ApplicationException($"Unable to find user with email");
-        }
-
-        var newUser = new User()
-        {
-            UserName = signUpDto.Email,
-            PasswordHash = signUpDto.Password
-        };
-
-
-        var isCreated = await _userManager.CreateAsync(newUser, signUpDto.Password);
-        //await _userManager.AddToRoleAsync(newUser, "user");
-
-        if (!isCreated.Succeeded)
-        {
-            var errors = isCreated.Errors.Select(e => e.Description).FirstOrDefault();
-            throw new ApplicationException($"User couldnt be added! {errors}");
-        }
-
-        return Ok(newUser);
+        return Ok(await _signUpService.SignUp(signup));
     }
 
-
-
-
-
+    [HttpPost("login")]
+    public async Task<IActionResult> LogIn([FromBody]UserLogInDto login)
+    {
+        return Ok(await _logInService.LogIn(login));
+    }
 
  }

@@ -1,6 +1,9 @@
+using Application.Dtos.Response.Token;
+using Domain.Entity;
+
 namespace Application.Interfaces.Services.TokenService;
 
 public interface ITokenService 
 {
-    string GetToken(string token);
+    TokenResponse GetToken(User user, IList<string> roles);
 }
